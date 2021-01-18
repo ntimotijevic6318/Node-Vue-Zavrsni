@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98260542-f710-4557-9fc6-9d06878af5a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/poruke/src/components/EditMessage.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/poruke/src/components/Header.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/poruke/src/components/MessageList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poruke/src/components/ShowMessage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poruke/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poruke/src/views/Message.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poruke/src/views/NewMessage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/node/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/node_modules/connect-history-api-fallback/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node/node_modules/connect-history-api-fallback/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node/routes/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/node/routes/messages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poruke" beforeDir="false" afterPath="$PROJECT_DIR$/poruke" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poruke/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/poruke/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poruke/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/poruke/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poruke/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/poruke/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poruke/public/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/poruke/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/poruke/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poruke/src/components/HelloWorld.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/poruke/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/poruke/src/main.js" afterDir="false" />
@@ -27,7 +35,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/poruke" />
   </component>
   <component name="ProjectId" id="1msEC3jajHPeiy9v1OzmI0RsZaQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,6 +65,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\untitled1" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebStormProjects\untitled1\poruke" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/node/app.js" working-dir="$PROJECT_DIR$/node">
@@ -82,7 +93,7 @@
       <workItem from="1610903311575" duration="360000" />
       <workItem from="1610903780672" duration="250000" />
       <workItem from="1610904310408" duration="4392000" />
-      <workItem from="1610963578844" duration="6275000" />
+      <workItem from="1610963578844" duration="11644000" />
     </task>
     <servers />
   </component>

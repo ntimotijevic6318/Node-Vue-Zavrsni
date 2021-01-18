@@ -68,7 +68,7 @@ route.post('/poruke', (req, res) => {
 
 // Prikaz pojedinacne poruke
 route.get('/poruka/:id', (req, res) => {
-    let query = 'select * from poruke where id=?';
+    let query = 'select * from poruke where idTelefona=?';
     let formated = mysql.format(query, [req.params.id]);
 
     pool.query(formated, (err, rows) => {
@@ -86,14 +86,14 @@ route.put('/poruka/:id', (req, res) => {
     if (error)
         res.status(400).send(error.details[0].message);
     else {
-        let query = "update poruke set user=?, message=? where id=?";
-        let formated = mysql.format(query, [req.body.user, req.body.message, req.params.id]);
+        let query = "update telefoni set markaTelefona=?, modelTelefona=? where idTelefona=?";
+        let formated = mysql.format(query, [req.body.markaTelefona, req.body.modelTelefona, req.params.id]);
 
         pool.query(formated, (err, response) => {
             if (err)
                 res.status(500).send(err.sqlMessage);
             else {
-                query = 'select * from poruke where id=?';
+                query = 'select * from telefoni where idTelefona=?';
                 formated = mysql.format(query, [req.params.id]);
 
                 pool.query(formated, (err, rows) => {
@@ -110,7 +110,7 @@ route.put('/poruka/:id', (req, res) => {
 
 // Brisanje poruke (vraca korisniku ceo red iz baze)
 route.delete('/poruka/:id', (req, res) => {
-    let query = 'select * from poruke where id=?';
+    let query = 'select * from telefoni where idTelefona=?';
     let formated = mysql.format(query, [req.params.id]);
 
     pool.query(formated, (err, rows) => {
@@ -119,7 +119,7 @@ route.delete('/poruka/:id', (req, res) => {
         else {
             let poruka = rows[0];
 
-            let query = 'delete from poruke where id=?';
+            let query = 'delete from telefoni where idTelefona=?';
             let formated = mysql.format(query, [req.params.id]);
 
             pool.query(formated, (err, rows) => {
