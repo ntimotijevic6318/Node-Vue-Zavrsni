@@ -10,10 +10,6 @@
       <change afterPath="$PROJECT_DIR$/poruke/src/views/Message.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/poruke/src/views/NewMessage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/node/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/node_modules/connect-history-api-fallback/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node/node_modules/connect-history-api-fallback/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/routes/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/node/routes/messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poruke" beforeDir="false" afterPath="$PROJECT_DIR$/poruke" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poruke/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/poruke/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poruke/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/poruke/package.json" afterDir="false" />
@@ -93,7 +89,7 @@
       <workItem from="1610903311575" duration="360000" />
       <workItem from="1610903780672" duration="250000" />
       <workItem from="1610904310408" duration="4392000" />
-      <workItem from="1610963578844" duration="11644000" />
+      <workItem from="1610963578844" duration="20036000" />
     </task>
     <servers />
   </component>
