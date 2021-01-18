@@ -15,8 +15,8 @@ const route = express.Router();
 
 // Sema za validaciju
 const sema = Joi.object().keys({
-    user: Joi.string().trim().min(4).max(12).required(),
-    message: Joi.string().max(512).required()
+    markaTelefona: Joi.string().trim().min(4).max(12).required(),
+    modelTelefona: Joi.string().max(512).required()
 });
 
 // Middleware da parsira json request-ove
@@ -25,7 +25,7 @@ route.use(express.json());
 // Prikaz svih poruka
 route.get('/poruke', (req, res) => {
     // Saljemo upit bazi
-    pool.query('select * from poruke', (err, rows) => {
+    pool.query('select * from telefoni', (err, rows) => {
         if (err)
             res.status(500).send(err.sqlMessage);  // Greska servera
         else
@@ -43,8 +43,8 @@ route.post('/poruke', (req, res) => {
         res.status(400).send(error.details[0].message);  // Greska zahteva
     else {  // Ako nisu upisemo ih u bazu
         // Izgradimo SQL query string
-        let query = "insert into poruke (user, message) values (?, ?)";
-        let formated = mysql.format(query, [req.body.user, req.body.message]);
+        let query = "insert into telefoni (markaTelefona, modelTelefona) values (?, ?)";
+        let formated = mysql.format(query, [req.body.markaTelefona, req.body.modelTelefona]);
 
         // Izvrsimo query
         pool.query(formated, (err, response) => {
@@ -52,7 +52,7 @@ route.post('/poruke', (req, res) => {
                 res.status(500).send(err.sqlMessage);
             else {
                 // Ako nema greske dohvatimo kreirani objekat iz baze i posaljemo ga korisniku
-                query = 'select * from poruke where id=?';
+                query = 'select * from telefoni where idTelefona=?';
                 formated = mysql.format(query, [response.insertId]);
 
                 pool.query(formated, (err, rows) => {
