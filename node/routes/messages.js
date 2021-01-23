@@ -15,8 +15,8 @@ const route = express.Router();
 
 // Sema za validaciju
 const sema = Joi.object().keys({
-    markaTelefona: Joi.string().trim().min(4).max(12).required(),
-    modelTelefona: Joi.string().max(512).required()
+    markaTelefona: Joi.string().trim().min(3).max(15).required(),
+    modelTelefona: Joi.string().max(15).required()
 });
 
 // Middleware da parsira json request-ove
